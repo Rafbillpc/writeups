@@ -1,6 +1,6 @@
 # Writeup for topcoder MM 154.
 
-[https://www.topcoder.com/challenges/7a247ad8-0ae4-47f0-94de-59541be3c469?tab=details](Problem description)
+[Problem description](https://www.topcoder.com/challenges/7a247ad8-0ae4-47f0-94de-59541be3c469?tab=details)
 
 My solution has two phases. In the first phase (90% of the time), I
 try to find a good solution with one large cycle of every color. Due
