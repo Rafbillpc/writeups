@@ -9,11 +9,11 @@ to the scoring function, most points come from this.
 In the second phase (10% of the time), I improve it to an arbitrary
 solution.
 
-I first precompute all intersections between segments. (This is quite
-expensive: upto 35% of the computation time).
+As a first step, I precompute all intersections between
+segments. (This is quite expensive: upto 35% of the computation
+time.)
 
-The first phase is simulated annealing with the following transitions
-(which can be evaluated in O(1)):
+The first phase is simulated annealing with the following transitions:
 1) Try to insert a new star in one of the cycles. Removing 0/1/2 stars
 from a different cycle is allowed.
 2) Apply a valid 3-opt move to one of the cycles (not that this does
@@ -36,6 +36,7 @@ a set of segments):
 
 <details>
 <summary>Example scores</summary>
+```
 01
 Score = 405.7277412255662
 02
@@ -56,10 +57,12 @@ Score = 4808.016459492484
 Score = 6980.255367821438
 10
 Score = 12652.08698199629
+```
 </details>
 
 <details>
 <summary>Example scores (time limit x 20)</summary>
+```
 01
 Score = 405.7277412255662
 02
@@ -80,4 +83,5 @@ Score = 5187.185668978776
 Score = 7250.074137551974
 10
 Score = 12806.464109971963
+```
 </details>
