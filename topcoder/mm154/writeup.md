@@ -1,4 +1,4 @@
-Writeup for topcoder MM 154.
+# Writeup for topcoder MM 154.
 
 [https://www.topcoder.com/challenges/7a247ad8-0ae4-47f0-94de-59541be3c469?tab=details](Problem description)
 
@@ -12,6 +12,8 @@ solution.
 As a first step, I precompute all intersections between
 segments. (This is quite expensive: upto 35% of the computation
 time.)
+
+## First phase
 
 The first phase is simulated annealing with the following transitions:
 1) Try to insert a new star in one of the cycles. Removing 0/1/2 stars
@@ -28,11 +30,15 @@ best 4 states are kept and optimized for 33% of the time. The same
 happens for the best 2 states for 33% of the time. (this is similar to
 successive halving).
 
+## Second phase
+
 The second phase is hill climbing with a few transitions (the state is
 a set of segments):
 1) Try to add a segment (removing conflicting segment).
 2) Apply a valid 3 opt move to any path/cycle.
 3) Try to add all segments in a random order.
+
+## Scores
 
 <details>
 <summary>Example scores</summary>
