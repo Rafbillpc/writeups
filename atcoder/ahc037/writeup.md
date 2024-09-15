@@ -1,10 +1,8 @@
 # Writeup for AHC037
 
-
-
 [Problem description](https://atcoder.jp/contests/ahc037/tasks/ahc037_a)
 [Standings](https://atcoder.jp/contests/ahc037/standings)
-[Best submission](TODO)
+[Best submission](https://atcoder.jp/contests/ahc037/submissions/57822912)
 
 The solution can be encoded as a binary tree, with the input points as leaves.
 The inner nodes correspond to intermediate points that are constructed to reach the input points more efficiently.
