@@ -1,5 +1,7 @@
 # Writeup for AHC037
 
+
+
 [Problem description](https://atcoder.jp/contests/ahc037/tasks/ahc037_a)
 [Standings](https://atcoder.jp/contests/ahc037/standings)
 [Best submission](TODO)
@@ -13,6 +15,7 @@ The total cost of the binary tree is then the sum of $$\|x_1-x_2\|+\|y_1-y_2\|$$
 
 This total cost is minimized using simulated annealing (the initialization does not matter much). 
 There are two transitions:
+
 1. (~85% of all transitions) Move a node `x₁` as a new neighbor of another node `x₂`.
 ```
       q₁           q₂                                 q₂
@@ -24,6 +27,7 @@ There are two transitions:
                                                 x₁  x₂
 ```
 This is only possible if `x₁` is not an ancestor of `x₂`, and `x₂` is not an ancestor of `x₁`.
+
 2. (~15% of all transitions) Do a tree rotation.
 ```
         r₁                    r₁
